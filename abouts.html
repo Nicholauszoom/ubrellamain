@@ -1,7 +1,790 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.w3.org/1999/xhtml">-->
+<!--<title >umbrellars </title>-->
+<!--<link rel="icon" href="ppty.png" type="image/png">-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--<style>-->
+<!--body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}-->
+
+<!--body, html {-->
+<!--  height: 100%;-->
+<!--  line-height: 1.8;-->
+<!--}-->
+<!--body {-->
+<!--       background-color:#3e3e3e;-->
+<!--              color:white;-->
+<!--      }-->
+
+
+<!--.bgimg-1 {-->
+<!--  background-position: center;-->
+<!--  background-size: cover;-->
+<!--  background-image: url("pexels_toni_cuenca_585752.jpg");-->
+<!--  min-height: 100%;-->
+<!--}-->
+
+<!--.w3-bar .w3-button {-->
+<!--  padding: 16px;-->
+<!--}-->
+<!--</style>-->
+<!--<body>-->
+
+<!--&lt;!&ndash; Navbar (sit on top) &ndash;&gt;-->
+<!--<div class="abouts">-->
+<!--    <div class="w3-bar w3-black w3-card" id="myNavbar">-->
+<!--        <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-small" src="ppty.png"  width="70" height="25"></a>-->
+<!--        &lt;!&ndash; Right-sided navbar links &ndash;&gt;-->
+<!--        <div class="w3-right w3-hide-small">-->
+<!--            <a th:href="@{/about}" class="w3-bar-item w3-button">ABOUT</a>-->
+<!--            <a href="@{/Team}" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>-->
+<!--            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>-->
+<!--            <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+<!--            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Hide right-floated links on small screens and replace them with a menu icon &ndash;&gt;-->
+
+<!--        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">-->
+<!--            <i class="fa fa-bars"></i>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Sidebar on small screens when clicking the menu icon &ndash;&gt;-->
+<!--<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">-->
+<!--    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>-->
+<!--    <a href="@{/about}" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>-->
+<!--    <a href="@{/Team}" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>-->
+<!--    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
+<!--    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>-->
+<!--    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash; Header with full-height image &ndash;&gt;-->
+<!--<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">-->
+<!--    <div class="w3-display-left w3-text-white" style="padding:48px">-->
+<!--        <span class="w3-jumbo w3-hide-small">Get start's Buy Original products with Us</span><br>-->
+<!--        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>-->
+<!--        <span class="w3-large">Stop wasting valuable time on find the original and cheap products up to Your door.</span>-->
+<!--        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>-->
+<!--    </div>-->
+<!--    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">-->
+<!--        <a href="nicholaussomi5@gmail.com"> <i class="fa fa-facebook-official w3-hover-opacity" ></i></a>-->
+<!--        <i class="fa fa-instagram w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-snapchat w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-twitter w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--&lt;!&ndash; About Section &ndash;&gt;-->
+<!--<div class="w3-container" style="padding:128px 16px" id="about">-->
+<!--    <h3 class="w3-center">ABOUT THE COMPANY</h3>-->
+<!--    <p class="w3-center w3-large">Key features of our company</p>-->
+<!--    <div class="w3-row-padding w3-center" style="margin-top:64px">-->
+<!--        <div class="w3-quarter">-->
+<!--            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>-->
+<!--            <p class="w3-large">Responsive</p>-->
+<!--            <p>We now move foward and deecide we have to changed Our title ,now we are Officially entered in Bussiness competitions .</p>-->
+<!--        </div>-->
+<!--        <div class="w3-quarter">-->
+<!--            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>-->
+<!--            <p class="w3-large">Passion</p>-->
+<!--            <p>Our passion is allways makes every one updated we have to change to morden world, and together to make the World a better place to live.</p>-->
+<!--        </div>-->
+<!--        <div class="w3-quarter">-->
+<!--            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>-->
+<!--            <p class="w3-large">Trust</p>-->
+<!--            <p>Umbrella is enterprenure ship teeneger company on found Dar es salaam aim to makes easyer for customeres to buy original products and also in a cheap way.</p>-->
+<!--        </div>-->
+<!--        <div class="w3-quarter">-->
+<!--            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>-->
+<!--            <p class="w3-large">Support</p>-->
+<!--            <p>Those who supports Umbrella from FUBAfix comunity,kinondoni gass workshop, papamotors work shop at Kariakoo.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Promo Section - "We know design" &ndash;&gt;-->
+<!--<div class="w3-container w3-light-grey" style="padding:128px 16px">-->
+<!--    <div class="w3-row-padding">-->
+<!--        <div class="w3-col m6">-->
+<!--            <h3>Accesibility.</h3>-->
+<!--            <p>In every products it has a contact number<br>call us if you want to buy any amount of product as you wish.<br> YOUR WARMLY WELCOME... !</p>-->
+<!--            <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>-->
+<!--        </div>-->
+<!--        <div class="w3-col m6">-->
+<!--            <img class="w3-image w3-round-large" src="Umbrella Logo.png" alt="formula" width="700" height="394">-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Team Section &ndash;&gt;-->
+<!--<div class="w3-container" style="padding:128px 16px" id="teams">-->
+<!--    <h3 class="w3-center">THE PRODUCTS</h3>-->
+<!--    <p class="w3-center w3-large">Umbrella Promotions Choice Is Your's</p>-->
+<!--    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="Adapter External cable 17,888.jpg" alt="External's" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>Adapter External cable SSD 4tb 500GB</h3>-->
+<!--                    <p class="w3-opacity">18,888/= TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="External key board hp 10,000tsh.jpg" alt="key boards" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>External key board hp </h3>-->
+<!--                    <p class="w3-opacity">12,000/= TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="samsung_S8.jpg" alt="key boards" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>samsung_S8</h3>-->
+<!--                    <p class="w3-opacity">12,000/= TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="External 500gb 26,631.jpg" alt="External" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>External SSD 4TB 500GB</h3>-->
+<!--                    <p class="w3-opacity">29,631/= TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="TWS Wireless Earphones Noise cancelling.jpg" alt="Ear phone" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>TWS Wireless Earphones 67% Noise cancelling </h3>-->
+<!--                    <p class="w3-opacity">10,500 TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="wireless head phones 14,615 TSH.jpg" alt="Head phones" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>Headset Wireless Bluetooth Head Phones </h3>-->
+<!--                    <p class="w3-opacity">18,615 TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="wired hp mouse 8,000.jpg" alt="mouse" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>wired hp mouse </h3>-->
+<!--                    <p class="w3-opacity">8,000/= TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--            <div class="w3-card">-->
+<!--                <img src="SanDisk 128 gb flash drive 9,368 tsh.jpg" alt="Flah Drive" style="width:100%">-->
+<!--                <div class="w3-container">-->
+<!--                    <h3>SanDisk 128GB flash drive </h3>-->
+<!--                    <p class="w3-opacity">12,368 TSH</p>-->
+<!--                    <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--&lt;!&ndash;Collumn two of products&ndash;&gt;-->
+<!--&lt;!&ndash;-->
+<!--<div class="w3-container" style="padding:128px 16px" id="team">-->
+<!--    <h3 class="w3-center">THE TEAM</h3>-->
+<!--    <p class="w3-center w3-large">The ones who runs this company</p>-->
+<!--    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">-->
+<!--        <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--         </div>-->
+
+
+<!--    </div>-->
+<!--</div>-->
+<!--&ndash;&gt;-->
+
+<!--&lt;!&ndash; Promo Section "Statistics" &ndash;&gt;-->
+<!--<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">-->
+<!--    <div class="w3-quarter">-->
+<!--        <span class="w3-xxlarge">14+</span>-->
+<!--        <br>Partners-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--        <span class="w3-xxlarge">25+</span>-->
+<!--        <br>Projects Done-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--        <span class="w3-xxlarge">20+</span>-->
+<!--        <br>Happy Clients-->
+<!--    </div>-->
+<!--    <div class="w3-quarter">-->
+<!--        <span class="w3-xxlarge">5+</span>-->
+<!--        <br>Meetings-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Work Section &ndash;&gt;-->
+<!--<div class="w3-container" style="padding:128px 16px" id="work">-->
+<!--    <h3 class="w3-center">OUR WORK</h3>-->
+<!--    <p class="w3-center w3-large">What we've done for people</p>-->
+
+<!--    <div class="w3-row-padding" style="margin-top:64px">-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="wes-hicks-ptXljygBu-0-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-OAe1vCx3Gsk-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-aHJB1FaM6pw-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-zfZfAJfxuJk-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="w3-row-padding w3-section">-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-_g1WdcKcV3w-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-kG1ld6TzrqA-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="mantas-hesthaven-6oAFUwQk2Ls-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">-->
+<!--        </div>-->
+<!--        <div class="w3-col l3 m6">-->
+<!--            <img src="dan-farrell-JjjEtuvp1jo-unsplash.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Modal for full size images on click&ndash;&gt;-->
+<!--<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">-->
+<!--    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>-->
+<!--    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">-->
+<!--        <img id="img01" class="w3-image">-->
+<!--        <p id="caption" class="w3-opacity w3-large"></p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Skills Section &ndash;&gt;-->
+<!--<div class="w3-container w3-light-grey w3-padding-64">-->
+<!--    <div class="w3-row-padding">-->
+<!--        <div class="w3-col m6">-->
+<!--            <h3>Our Skills.</h3>-->
+<!--            <p>Web apps design, websites and graphics design, databases designs<br>-->
+<!--                cctv camera configurations.</p>-->
+<!--            <p>House Electrical problems, car mechanics, web and databases security with spring boot<br>-->
+<!--                Your wellcome.</p>-->
+<!--        </div>-->
+<!--        <div class="w3-col m6">-->
+<!--            <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>-->
+<!--            <div class="w3-grey">-->
+<!--                <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>-->
+<!--            </div>-->
+<!--            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>-->
+<!--            <div class="w3-grey">-->
+<!--                <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>-->
+<!--            </div>-->
+<!--            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>-->
+<!--            <div class="w3-grey">-->
+<!--                <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Pricing Section &ndash;&gt;-->
+<!--<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">-->
+<!--    <h3>MORE DETAILS</h3>-->
+<!--    <p class="w3-large">Choose a pricing plan that fits your needs.</p>-->
+<!--    <div class="w3-row-padding" style="margin-top:64px">-->
+<!--        <div class="w3-third w3-section">-->
+<!--            <ul class="w3-ul w3-white w3-hover-shadow">-->
+<!--                <li class="w3-black w3-xlarge w3-padding-32">Basic</li>-->
+<!--                <li class="w3-padding-16"><b>10GB</b> Storage</li>-->
+<!--                <li class="w3-padding-16"><b>10</b> Emails</li>-->
+<!--                <li class="w3-padding-16"><b>10</b> Domains</li>-->
+<!--                <li class="w3-padding-16"><b>Endless</b> Support</li>-->
+<!--                <li class="w3-padding-16">-->
+<!--                    <h2 class="w3-wide">$ 10</h2>-->
+<!--                    <span class="w3-opacity">per month</span>-->
+<!--                </li>-->
+<!--                <li class="w3-light-grey w3-padding-24">-->
+<!--                    <button class="w3-button w3-black w3-padding-large">Sign Up</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="w3-third">-->
+<!--            <ul class="w3-ul w3-white w3-hover-shadow">-->
+<!--                <li class="w3-red w3-xlarge w3-padding-48">Pro</li>-->
+<!--                <li class="w3-padding-16"><b>25GB</b> Storage</li>-->
+<!--                <li class="w3-padding-16"><b>25</b> Emails</li>-->
+<!--                <li class="w3-padding-16"><b>25</b> Domains</li>-->
+<!--                <li class="w3-padding-16"><b>Endless</b> Support</li>-->
+<!--                <li class="w3-padding-16">-->
+<!--                    <h2 class="w3-wide">$ 25</h2>-->
+<!--                    <span class="w3-opacity">per month</span>-->
+<!--                </li>-->
+<!--                <li class="w3-light-grey w3-padding-24">-->
+<!--                    <button class="w3-button w3-black w3-padding-large">Sign Up</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="w3-third w3-section">-->
+<!--            <ul class="w3-ul w3-white w3-hover-shadow">-->
+<!--                <li class="w3-black w3-xlarge w3-padding-32">Premium</li>-->
+<!--                <li class="w3-padding-16"><b>50GB</b> Storage</li>-->
+<!--                <li class="w3-padding-16"><b>50</b> Emails</li>-->
+<!--                <li class="w3-padding-16"><b>50</b> Domains</li>-->
+<!--                <li class="w3-padding-16"><b>Endless</b> Support</li>-->
+<!--                <li class="w3-padding-16">-->
+<!--                    <h2 class="w3-wide">$ 50</h2>-->
+<!--                    <span class="w3-opacity">per month</span>-->
+<!--                </li>-->
+<!--                <li class="w3-light-grey w3-padding-24">-->
+<!--                    <button class="w3-button w3-black w3-padding-large">Sign Up</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Contact Section &ndash;&gt;-->
+<!--<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">-->
+<!--    <h3 class="w3-center">CONTACT</h3>-->
+<!--    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>-->
+<!--    <div style="margin-top:48px">-->
+<!--        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Dar-es-salaam, TZ</p>-->
+<!--        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +225-768-447-672</p>-->
+<!--        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nicholaussomi5@gmail.com</p>-->
+<!--        <br>-->
+<!--        <form action="/action_page.php" target="_blank">-->
+<!--            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>-->
+<!--            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>-->
+<!--            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>-->
+<!--            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>-->
+<!--            <p>-->
+<!--                <button class="w3-button w3-black" type="submit">-->
+<!--                    <i class="fa fa-paper-plane"></i> SEND MESSAGE-->
+<!--                </button>-->
+<!--            </p>-->
+<!--        </form>-->
+<!--        &lt;!&ndash; Image of location/map &ndash;&gt;-->
+<!--        <img src="Trollhunters.Rise.of.the.Titans.2021.720p.NF.WEBRip.mkv" class="w3-image w3-greyscale" style="width:50%;height:20%;margin-top:5px">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="w3-center w3-black w3-padding-64">-->
+<!--    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>-->
+<!--    <div class="w3-xlarge w3-section">-->
+<!--        <i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-instagram w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-snapchat w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-twitter w3-hover-opacity"></i>-->
+<!--        <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+<!--    </div>-->
+<!--    <p>Powered by <a href="https://www.info@fubafix.co.tz" title="Fubafix" target="_blank" class="w3-hover-text-green">Fubafix</a></p>-->
+<!--</footer>-->
+
+<!--<script>-->
+<!--// Modal Image Gallery-->
+<!--function onClick(element) {-->
+<!--  document.getElementById("img01").src = element.src;-->
+<!--  document.getElementById("modal01").style.display = "block";-->
+<!--  var captionText = document.getElementById("caption");-->
+<!--  captionText.innerHTML = element.alt;-->
+<!--}-->
+
+
+<!--// Toggle between showing and hiding the sidebar when clicking the menu icon-->
+<!--var mySidebar = document.getElementById("mySidebar");-->
+
+<!--function w3_open() {-->
+<!--  if (mySidebar.style.display === 'block') {-->
+<!--    mySidebar.style.display = 'none';-->
+<!--  } else {-->
+<!--    mySidebar.style.display = 'block';-->
+<!--  }-->
+<!--}-->
+
+<!--// Close the sidebar with the close button-->
+<!--function w3_close() {-->
+<!--    mySidebar.style.display = "none";-->
+<!--}-->
+<!--</script>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<title>W3.CSS Template</title>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--<style>-->
+<!--.w3-sidebar a {font-family: "Roboto", sans-serif}-->
+<!--body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}-->
+
+<!--body{-->
+<!--background-color:#3e3e3e;-->
+<!--color:white;-->
+<!--}-->
+
+<!--</style>-->
+<!--<body class="w3-content" style="max-width:1200px">-->
+
+<!--&lt;!&ndash; Sidebar/menu &ndash;&gt;-->
+<!--<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">-->
+<!--    <div class="w3-container w3-display-container w3-padding-16">-->
+<!--        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>-->
+<!--        <h3 class="w3-wide"><b>LOGO</b></h3>-->
+<!--    </div>-->
+<!--    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">-->
+<!--        <a href="#" class="w3-bar-item w3-button">Shirts</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button">Dresses</a>-->
+<!--        <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">-->
+<!--            Jeans <i class="fa fa-caret-down"></i>-->
+<!--        </a>-->
+<!--        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">-->
+<!--            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>-->
+<!--            <a href="#" class="w3-bar-item w3-button">Relaxed</a>-->
+<!--            <a href="#" class="w3-bar-item w3-button">Bootcut</a>-->
+<!--            <a href="#" class="w3-bar-item w3-button">Straight</a>-->
+<!--        </div>-->
+<!--        <a href="#" class="w3-bar-item w3-button">Jackets</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button">Gymwear</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button">Blazers</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button">Shoes</a>-->
+<!--    </div>-->
+<!--    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>-->
+<!--    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>-->
+<!--    <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>-->
+<!--</nav>-->
+
+<!--&lt;!&ndash; Top menu on small screens &ndash;&gt;-->
+<!--<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">-->
+<!--    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>-->
+<!--    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>-->
+<!--</header>-->
+
+<!--&lt;!&ndash; Overlay effect when opening sidebar on small screens &ndash;&gt;-->
+<!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+<!--&lt;!&ndash; !PAGE CONTENT! &ndash;&gt;-->
+<!--<div class="w3-main" style="margin-left:250px">-->
+
+<!--    &lt;!&ndash; Push down content on small screens &ndash;&gt;-->
+<!--    <div class="w3-hide-large" style="margin-top:83px"></div>-->
+
+<!--    &lt;!&ndash; Top header &ndash;&gt;-->
+<!--    <header class="w3-container w3-xlarge">-->
+<!--        <p class="w3-left">Jeans</p>-->
+<!--        <p class="w3-right">-->
+<!--            <i class="fa fa-shopping-cart w3-margin-right"></i>-->
+<!--            <i class="fa fa-search"></i>-->
+<!--        </p>-->
+<!--    </header>-->
+
+<!--    &lt;!&ndash; Image header &ndash;&gt;-->
+<!--    <div class="w3-display-container w3-container">-->
+<!--        <img src="phone imag 2.PNG" alt="Jeans" style="width:100%">-->
+<!--        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">-->
+<!--            <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>-->
+<!--            <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>-->
+<!--            <h1 class="w3-hide-small">COLLECTION 2016</h1>-->
+<!--            <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="w3-container w3-text-grey" id="jeans">-->
+<!--        <p>8 items</p>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Product grid &ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="w3-row w3-grayscale">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="w3-col l3 s6">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="samsung_S8.JPG" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Ripped Skinny Jeans<br><b>$24.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="3207179.png" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Mega Ripped Jeans<br><b>$19.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="w3-col l3 s6">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="w3-display-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="3183794.png" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <span class="w3-tag w3-display-topleft">New</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="w3-display-middle w3-display-hover">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Mega Ripped Jeans<br><b>$19.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="/w3images/jeans3.jpg" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Washed Skinny Jeans<br><b>$20.50</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="w3-col l3 s6">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="/w3images/jeans3.jpg" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Washed Skinny Jeans<br><b>$20.50</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="w3-display-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <img src="/w3images/jeans4.jpg" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <span class="w3-tag w3-display-topleft">Sale</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="w3-display-middle w3-display-hover">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="w3-col l3 s6">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="/w3images/jeans4.jpg" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Vintage Skinny Jeans<br><b>$14.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="w3-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src="/w3images/jeans1.jpg" style="width:100%">&ndash;&gt;-->
+<!--&lt;!&ndash;                <p>Ripped Skinny Jeans<br><b>$24.99</b></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    <div class="w3-container" style="padding:128px 16px" id="teams">-->
+<!--        <h3 class="w3-center">THE PRODUCTS</h3>-->
+<!--        <p class="w3-center w3-large">Umbrella Promotions Choice Is Your's</p>-->
+<!--        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="SAMSUNGS8.PNG" alt="External's" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>SAMSUNG S8+ </h3>-->
+<!--                        <p class="w3-opacity">18,888/= TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam Makumbusho tz</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="182487_OWWNXI_132.png" alt="key boards" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>External key board hp </h3>-->
+<!--                        <p class="w3-opacity">12,000/= TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="3183794.png" alt="External" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>External SSD 4TB 500GB</h3>-->
+<!--                        <p class="w3-opacity">29,631/= TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="TWS Wireless Earphones Noise cancelling.jpg" alt="Ear phone" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>TWS Wireless Earphones 67% Noise cancelling </h3>-->
+<!--                        <p class="w3-opacity">10,500 TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="wireless head phones 14,615 TSH.jpg" alt="Head phones" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>Headset Wireless Bluetooth Head Phones </h3>-->
+<!--                        <p class="w3-opacity">18,615 TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="wired hp mouse 8,000.jpg" alt="mouse" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>wired hp mouse </h3>-->
+<!--                        <p class="w3-opacity">8,000/= TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam tz</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="w3-col l3 m6 w3-margin-bottom">-->
+<!--                <div class="w3-card">-->
+<!--                    <img src="SanDisk 128 gb flash drive 9,368 tsh.jpg" alt="Flah Drive" style="width:100%">-->
+<!--                    <div class="w3-container">-->
+<!--                        <h3>SanDisk 128GB flash drive </h3>-->
+<!--                        <p class="w3-opacity">12,368 TSH</p>-->
+<!--                        <p>Contact: 0768447672<br>dar-es-salaam</p>-->
+<!--                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Subscribe section &ndash;&gt;-->
+<!--    <div class="w3-container w3-black w3-padding-32">-->
+<!--        <h1>Subscribe</h1>-->
+<!--        <p>To get special offers and VIP treatment:</p>-->
+<!--        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>-->
+<!--        <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">-->
+<!--        <div class="w3-row-padding">-->
+<!--            <div class="w3-col s4">-->
+<!--                <h4>Contact</h4>-->
+<!--                <p>Questions? Go ahead.</p>-->
+<!--                <form action="/action_page.php" target="_blank">-->
+<!--                    <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>-->
+<!--                    <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>-->
+<!--                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>-->
+<!--                    <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>-->
+<!--                    <button type="submit" class="w3-button w3-block w3-black">Send</button>-->
+<!--                </form>-->
+<!--            </div>-->
+
+<!--            <div class="w3-col s4">-->
+<!--                <h4>About</h4>-->
+<!--                <p><a href="#">About us</a></p>-->
+<!--                <p><a href="#">We're hiring</a></p>-->
+<!--                <p><a href="#">Support</a></p>-->
+<!--                <p><a href="#">Find store</a></p>-->
+<!--                <p><a href="#">Shipment</a></p>-->
+<!--                <p><a href="#">Payment</a></p>-->
+<!--                <p><a href="#">Gift card</a></p>-->
+<!--                <p><a href="#">Return</a></p>-->
+<!--                <p><a href="#">Help</a></p>-->
+<!--            </div>-->
+
+<!--            <div class="w3-col s4 w3-justify">-->
+<!--                <h4>Store</h4>-->
+<!--                <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>-->
+<!--                <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>-->
+<!--                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>-->
+<!--                <h4>We accept</h4>-->
+<!--                <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>-->
+<!--                <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>-->
+<!--                <br>-->
+<!--                <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>-->
+<!--                <i class="fa fa-instagram w3-hover-opacity w3-large"></i>-->
+<!--                <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>-->
+<!--                <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>-->
+<!--                <i class="fa fa-twitter w3-hover-opacity w3-large"></i>-->
+<!--                <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
+
+<!--    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>-->
+
+<!--    &lt;!&ndash; End page content &ndash;&gt;-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Newsletter Modal &ndash;&gt;-->
+<!--<div id="newsletter" class="w3-modal">-->
+<!--    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">-->
+<!--        <div class="w3-container w3-white w3-center">-->
+<!--            <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>-->
+<!--            <h2 class="w3-wide">NEWSLETTER</h2>-->
+<!--            <p>Join our mailing list to receive updates on new arrivals and special offers.</p>-->
+<!--            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>-->
+<!--            <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--// Accordion-->
+<!--function myAccFunc() {-->
+<!--  var x = document.getElementById("demoAcc");-->
+<!--  if (x.className.indexOf("w3-show") == -1) {-->
+<!--    x.className += " w3-show";-->
+<!--  } else {-->
+<!--    x.className = x.className.replace(" w3-show", "");-->
+<!--  }-->
+<!--}-->
+
+<!--// Click on the "Jeans" link on page load to open the accordion for demo purposes-->
+<!--document.getElementById("myBtn").click();-->
+
+
+<!--// Open and close sidebar-->
+<!--function w3_open() {-->
+<!--  document.getElementById("mySidebar").style.display = "block";-->
+<!--  document.getElementById("myOverlay").style.display = "block";-->
+<!--}-->
+
+<!--function w3_close() {-->
+<!--  document.getElementById("mySidebar").style.display = "none";-->
+<!--  document.getElementById("myOverlay").style.display = "none";-->
+<!--}-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml">
-<title >umbrellars </title>
-<link rel="icon" href="ppty.png" type="image/png">
+<title >Allan </title>
+<link rel="icon" href="Allan logo.jpg" type="image/jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,11 +797,16 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
+body {
+       background-color:#3e3e3e;
+              color:white;
+      }
+
 
 .bgimg-1 {
-  background-position: center;
+  background-position: Fit;
   background-size: cover;
-  background-image: url("pexels_toni_cuenca_585752.jpg");
+  background-image: url("phone1.jpg");
   min-height: 100%;
 }
 
@@ -31,7 +819,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="abouts">
     <div class="w3-bar w3-black w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-small" src="ppty.png"  width="70" height="25"></a>
+        <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-small" src="Allan logo.jpg"  width="70" height="25"></a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
             <a th:href="@{/about}" class="w3-bar-item w3-button">ABOUT</a>
@@ -76,34 +864,6 @@ body, html {
     </div>
 </header>
 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-    <h3 class="w3-center">ABOUT THE COMPANY</h3>
-    <p class="w3-center w3-large">Key features of our company</p>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-quarter">
-            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-            <p class="w3-large">Responsive</p>
-            <p>We now move foward and deecide we have to changed Our title ,now we are Officially entered in Bussiness competitions .</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Passion</p>
-            <p>Our passion is allways makes every one updated we have to change to morden world, and together to make the World a better place to live.</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Trust</p>
-            <p>Umbrella is enterprenure ship teeneger company on found Dar es salaam aim to makes easyer for customeres to buy original products and also in a cheap way.</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Support</p>
-            <p>Those who supports Umbrella from FUBAfix comunity,kinondoni gass workshop, papamotors work shop at Kariakoo.</p>
-        </div>
-    </div>
-</div>
-
 <!-- Promo Section - "We know design" -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
     <div class="w3-row-padding">
@@ -126,9 +886,9 @@ body, html {
     <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
         <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
-                <img src="Adapter External cable 17,888.jpg" alt="External's" style="width:100%">
+                <img src="Sumsung galaxy s8 ultra 1.jpg" alt="External's" style="width:100%">
                 <div class="w3-container">
-                    <h3>Adapter External cable SSD 4tb 500GB</h3>
+                    <h3>SAMSUNG S8 Ultra</h3>
                     <p class="w3-opacity">18,888/= TSH</p>
                     <p>Contact: 0768447672<br>dar-es-salaam tz</p>
                     <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -137,9 +897,9 @@ body, html {
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
-                <img src="External key board hp 10,000tsh.jpg" alt="key boards" style="width:100%">
+                <img src="samsung Galaxy s9+ ultra 2.jpg" alt="key boards" style="width:100%">
                 <div class="w3-container">
-                    <h3>External key board hp </h3>
+                    <h3>samsung Galaxy s9+ ultra </h3>
                     <p class="w3-opacity">12,000/= TSH</p>
                     <p>Contact: 0768447672<br>dar-es-salaam tz</p>
                     <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -148,9 +908,20 @@ body, html {
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
-                <img src="External 500gb 26,631.jpg" alt="External" style="width:100%">
+                <img src="samsung s9 plus.jpg" alt="key boards" style="width:100%">
                 <div class="w3-container">
-                    <h3>External SSD 4TB 500GB</h3>
+                    <h3>samsung Galaxy s9 ultra</h3>
+                    <p class="w3-opacity">12,000/= TSH</p>
+                    <p>Contact: 0768447672<br>dar-es-salaam tz</p>
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="Sumsung galaxy s8 ultra 1.jpg" alt="External" style="width:100%">
+                <div class="w3-container">
+                    <h3>SAMSUNGS8 </h3>
                     <p class="w3-opacity">29,631/= TSH</p>
                     <p>Contact: 0768447672<br>dar-es-salaam</p>
                     <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -159,9 +930,9 @@ body, html {
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
-                <img src="TWS Wireless Earphones Noise cancelling.jpg" alt="Ear phone" style="width:100%">
+                <img src="phone1.PNG" alt="Ear phone" style="width:100%">
                 <div class="w3-container">
-                    <h3>TWS Wireless Earphones 67% Noise cancelling </h3>
+                    <h3>iPHONE 13 pro </h3>
                     <p class="w3-opacity">10,500 TSH</p>
                     <p>Contact: 0768447672<br>dar-es-salaam</p>
                     <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -178,8 +949,8 @@ body, html {
                     <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
                 </div>
             </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
                 <img src="wired hp mouse 8,000.jpg" alt="mouse" style="width:100%">
                 <div class="w3-container">
@@ -216,7 +987,33 @@ body, html {
     </div>
 </div>
 -->
-
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT THE COMPANY</h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-quarter">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Responsive</p>
+            <p>We now move foward and deecide we have to changed Our title ,now we are Officially entered in Bussiness competitions .</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Passion</p>
+            <p>Our passion is allways makes every one updated we have to change to morden world, and together to make the World a better place to live.</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Trust</p>
+            <p>Umbrella is enterprenure ship teeneger company on found Dar es salaam aim to makes easyer for customeres to buy original products and also in a cheap way.</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Support</p>
+            <p>Those who supports Umbrella from FUBAfix comunity,kinondoni gass workshop, papamotors work shop at Kariakoo.</p>
+        </div>
+    </div>
+</div>
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
     <div class="w3-quarter">
